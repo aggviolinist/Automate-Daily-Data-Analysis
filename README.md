@@ -7,7 +7,10 @@ Automated pipeline that analyzes your data files daily without the need for any 
 ### IAM
 
 ## Creating the Lambda code
-
+1. Creates an Athena table pointing to CSV data in S3.
+2. Runs a query on that table to find kombucha records with abnormal pH levels.
+3. Writes query results to a specific folder in an S3 bucket.
+4. Returns the location of the results in S3.
 ## S3
 Create a bucket
 ```sh
