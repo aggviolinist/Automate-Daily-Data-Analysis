@@ -1,5 +1,5 @@
 # Automate-Daily-Data-Analysis
-Automate Daily Data Analysis with Amazon Athena, AWS Lambda &amp; S3
+Automated pipeline that analyzes your data files daily without the need for any servers.
 ## Tools
 ### Lambda
 ### S3
