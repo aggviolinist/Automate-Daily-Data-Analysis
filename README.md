@@ -5,6 +5,7 @@ Automated pipeline that analyzes your data files daily without the need for any 
 ### S3
 ### Athena
 ### IAM
+### EventBridge
 
 ## Creating the Lambda code
 1. Creates an Athena table pointing to CSV data in S3.
@@ -28,3 +29,6 @@ Create an IAM role called `analysis-policy`that is gonna be used by lambda to co
 - AmazonS3FullAccess
 - AmazonAthenaFullAccess
 - AmazonAPIGatewayPushToCloudWatchLogs
+## Lambda
+Upload out lambda code to lambda and deploy it
+## EventBridge
