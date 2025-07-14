@@ -17,8 +17,8 @@ Create a bucket
 ```sh
 aws s3 mb s3://my-analysis-buckooo
 ```
-Create folders inside the bucket
-raw, athena, processed
+- Create folders inside the bucket raw, athena, processed
+- Under raw, create a folder with the date of today i.e `2025-07-14`
 
 ## Athena
 Configure Athena with a database that will be used to host the table that will have the data querried
@@ -33,3 +33,7 @@ Create an IAM role called `analysis-policy`that is gonna be used by lambda to co
 Upload out lambda code to lambda and deploy it
 ## EventBridge
 Create a rule that runs 9pm daily. It uses the lambda function to clean the data from S3 using Athena.
+The data is then saved on the processed folder on S3 bucket
+
+## Output 
+The processed data is outputed as CV in our bucket under processed folder
