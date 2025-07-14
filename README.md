@@ -32,3 +32,4 @@ Create an IAM role called `analysis-policy`that is gonna be used by lambda to co
 ## Lambda
 Upload out lambda code to lambda and deploy it
 ## EventBridge
+Create a rule that runs 9pm daily. It uses the lambda function to clean the data from S3 using Athena.
