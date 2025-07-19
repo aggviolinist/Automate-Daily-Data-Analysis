@@ -21,7 +21,7 @@ aws s3 mb s3://my-analysis-buckooo
 - Under raw, create a folder with the date of today i.e `2025-07-14`
 
 ## Athena
-Configure Athena with a database that will be used to host the table that will have the data querried
+Configure Athena with a database that will be used to host the table that will have the data querried.
 - Select the S3 bucket and choose athena folder as the Query result location
 - Create a database called `analysis_db`
 ## IAM
